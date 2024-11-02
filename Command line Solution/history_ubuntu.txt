@@ -1,0 +1,17 @@
+   68  echo -e "Собаки\nКошки\nХомяки" > Домашние_животные.txt
+   69  echo -e "Лошади\nВерблюды\nОслы" > Вьючные_животные.txt
+   70  cat Домашние_животные.txt Вьючные_животные.txt > Объединенные_животные.txt
+   71  cat Объединенные_животные.txt
+   72  mv Объединенные_животные.txt Друзья_человека.txt
+   73  cat Друзья_человека.txt
+   74  mkdir Животные
+   75  mv Друзья_человека.txt Животные/
+   76  wget https://dev.mysql.com/doc/refman/8.0/en/checking-gpg-signature.html
+   77  sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5072E1F5
+   78  echo "deb http://repo.mysql.com/apt/ubuntu/ $(lsb_release -sc) mysql-8.0" | sudo tee /etc/apt/sources.list.d/mysql.list
+   79  sudo apt-get update
+   80  sudo apt-get install mysql-server
+   81  sudo systemctl status mysql
+   86  wget http://nginx.org/packages/ubuntu/pool/nginx/n/nginx/nginx_1.18.0-1~focal_amd64.deb
+   87  sudo dpkg -i nginx_1.18.0-1~focal_amd64.deb
+   88  sudo dpkg -r nginx
