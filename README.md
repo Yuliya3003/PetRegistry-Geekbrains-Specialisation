@@ -11,7 +11,7 @@
 
 **Запуск реестра через [Main.java](java%2Forg%2Fexample%2FMain.java)**
 
-Перед запуском создать файл config.properties внутри папки resources, прописать данные для подключения к MySQL серверу.
+Перед запуском прописать данные для подключения к MySQL серверу внутри [config.properties](src%2Fmain%2Fresources%2Fconfig.properties)
 
     db.url=         your mysqlurl
     db.user=        your username
