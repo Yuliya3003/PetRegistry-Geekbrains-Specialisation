@@ -69,7 +69,7 @@ public class Menu {
 
         System.out.print("Введите навыки животного (через запятую): ");
         String skillsInput = scanner.nextLine();
-        List<String> skills = Arrays.asList(skillsInput.split("\\s*,\\s*")); // Разделяем по запятой и убираем пробелы
+        List<String> skills = Arrays.asList(skillsInput.split("\\s*,\\s*"));
 
         System.out.print("Введите дату рождения животного (в формате YYYY-MM-DD): ");
         String birthDateStr = scanner.nextLine();
